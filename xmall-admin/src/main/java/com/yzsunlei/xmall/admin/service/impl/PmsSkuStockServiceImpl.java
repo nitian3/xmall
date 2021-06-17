@@ -1,7 +1,5 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
-import com.yzsunlei.xmall.admin.dao.PmsSkuStockDao;
-import com.yzsunlei.xmall.db.mapper.PmsSkuStockMapper;
 import com.yzsunlei.xmall.db.model.PmsSkuStock;
 import com.yzsunlei.xmall.admin.service.PmsSkuStockService;
 import com.yzsunlei.xmall.db.model.PmsSkuStockExample;

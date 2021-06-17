@@ -2,7 +2,6 @@ package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.yzsunlei.xmall.admin.service.SmsFlashPromotionService;
-import com.yzsunlei.xmall.db.mapper.SmsFlashPromotionMapper;
 import com.yzsunlei.xmall.db.model.SmsFlashPromotion;
 import com.yzsunlei.xmall.db.model.SmsFlashPromotionExample;
 import org.springframework.beans.factory.annotation.Autowired;

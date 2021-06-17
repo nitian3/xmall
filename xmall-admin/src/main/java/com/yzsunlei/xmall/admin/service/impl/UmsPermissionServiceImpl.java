@@ -2,7 +2,6 @@ package com.yzsunlei.xmall.admin.service.impl;
 
 import com.yzsunlei.xmall.admin.dto.UmsPermissionNode;
 import com.yzsunlei.xmall.admin.service.UmsPermissionService;
-import com.yzsunlei.xmall.db.mapper.UmsPermissionMapper;
 import com.yzsunlei.xmall.db.model.UmsPermission;
 import com.yzsunlei.xmall.db.model.UmsPermissionExample;
 import org.springframework.beans.BeanUtils;

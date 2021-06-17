@@ -2,7 +2,6 @@ package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.yzsunlei.xmall.admin.service.SmsHomeAdvertiseService;
-import com.yzsunlei.xmall.db.mapper.SmsHomeAdvertiseMapper;
 import com.yzsunlei.xmall.db.model.SmsHomeAdvertise;
 import com.yzsunlei.xmall.db.model.SmsHomeAdvertiseExample;
 import org.springframework.beans.factory.annotation.Autowired;

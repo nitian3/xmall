@@ -1,7 +1,6 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.db.mapper.SmsHomeBrandMapper;
 import com.yzsunlei.xmall.db.model.SmsHomeBrand;
 import com.yzsunlei.xmall.db.model.SmsHomeBrandExample;
 import com.yzsunlei.xmall.admin.service.SmsHomeBrandService;

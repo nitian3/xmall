@@ -1,6 +1,5 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
-import com.yzsunlei.xmall.db.mapper.CmsPrefrenceAreaMapper;
 import com.yzsunlei.xmall.db.model.CmsPrefrenceArea;
 import com.yzsunlei.xmall.db.model.CmsPrefrenceAreaExample;
 import com.yzsunlei.xmall.admin.service.CmsPrefrenceAreaService;

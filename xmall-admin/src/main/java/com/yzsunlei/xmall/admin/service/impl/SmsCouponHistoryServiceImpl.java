@@ -1,7 +1,6 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.db.mapper.SmsCouponHistoryMapper;
 import com.yzsunlei.xmall.db.model.SmsCouponHistory;
 import com.yzsunlei.xmall.db.model.SmsCouponHistoryExample;
 import com.yzsunlei.xmall.admin.service.SmsCouponHistoryService;

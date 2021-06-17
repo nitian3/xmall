@@ -1,6 +1,5 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
-import com.yzsunlei.xmall.db.mapper.UmsMemberLevelMapper;
 import com.yzsunlei.xmall.db.model.UmsMemberLevel;
 import com.yzsunlei.xmall.db.model.UmsMemberLevelExample;
 import com.yzsunlei.xmall.admin.service.UmsMemberLevelService;

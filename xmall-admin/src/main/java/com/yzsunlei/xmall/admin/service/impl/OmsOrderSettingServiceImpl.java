@@ -1,6 +1,5 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
-import com.yzsunlei.xmall.db.mapper.OmsOrderSettingMapper;
 import com.yzsunlei.xmall.db.model.OmsOrderSetting;
 import com.yzsunlei.xmall.admin.service.OmsOrderSettingService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,6 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.db.mapper.SmsHomeRecommendProductMapper;
 import com.yzsunlei.xmall.db.model.SmsHomeRecommendProduct;
 import com.yzsunlei.xmall.db.model.SmsHomeRecommendProductExample;
 import com.yzsunlei.xmall.admin.service.SmsHomeRecommendProductService;

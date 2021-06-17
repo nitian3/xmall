@@ -1,13 +1,7 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.admin.dao.UmsAdminPermissionRelationDao;
-import com.yzsunlei.xmall.admin.dao.UmsAdminRoleRelationDao;
 import com.yzsunlei.xmall.admin.dto.UmsAdminParam;
-import com.yzsunlei.xmall.db.mapper.UmsAdminLoginLogMapper;
-import com.yzsunlei.xmall.db.mapper.UmsAdminMapper;
-import com.yzsunlei.xmall.db.mapper.UmsAdminPermissionRelationMapper;
-import com.yzsunlei.xmall.db.mapper.UmsAdminRoleRelationMapper;
 import com.yzsunlei.xmall.admin.service.UmsAdminService;
 import com.yzsunlei.xmall.db.model.*;
 import org.slf4j.Logger;

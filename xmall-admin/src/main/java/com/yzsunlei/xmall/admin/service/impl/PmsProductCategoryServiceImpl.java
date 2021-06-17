@@ -1,13 +1,8 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.admin.dao.PmsProductCategoryAttributeRelationDao;
-import com.yzsunlei.xmall.admin.dao.PmsProductCategoryDao;
 import com.yzsunlei.xmall.admin.dto.PmsProductCategoryParam;
 import com.yzsunlei.xmall.admin.dto.PmsProductCategoryWithChildrenItem;
-import com.yzsunlei.xmall.db.mapper.PmsProductCategoryAttributeRelationMapper;
-import com.yzsunlei.xmall.db.mapper.PmsProductCategoryMapper;
-import com.yzsunlei.xmall.db.mapper.PmsProductMapper;
 import com.yzsunlei.xmall.admin.service.PmsProductCategoryService;
 import com.yzsunlei.xmall.db.model.*;
 import org.apache.commons.collections.CollectionUtils;

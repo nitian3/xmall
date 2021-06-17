@@ -3,7 +3,6 @@ package com.yzsunlei.xmall.admin.service.impl;
 import com.yzsunlei.xmall.admin.dto.SmsFlashPromotionSessionDetail;
 import com.yzsunlei.xmall.admin.service.SmsFlashPromotionProductRelationService;
 import com.yzsunlei.xmall.admin.service.SmsFlashPromotionSessionService;
-import com.yzsunlei.xmall.db.mapper.SmsFlashPromotionSessionMapper;
 import com.yzsunlei.xmall.db.model.SmsFlashPromotionSession;
 import com.yzsunlei.xmall.db.model.SmsFlashPromotionSessionExample;
 import org.springframework.beans.BeanUtils;

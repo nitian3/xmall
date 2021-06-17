@@ -1,11 +1,8 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.admin.dao.PmsProductAttributeDao;
 import com.yzsunlei.xmall.admin.dto.PmsProductAttributeParam;
 import com.yzsunlei.xmall.admin.dto.ProductAttrInfo;
-import com.yzsunlei.xmall.db.mapper.PmsProductAttributeCategoryMapper;
-import com.yzsunlei.xmall.db.mapper.PmsProductAttributeMapper;
 import com.yzsunlei.xmall.db.model.PmsProductAttribute;
 import com.yzsunlei.xmall.db.model.PmsProductAttributeCategory;
 import com.yzsunlei.xmall.db.model.PmsProductAttributeExample;

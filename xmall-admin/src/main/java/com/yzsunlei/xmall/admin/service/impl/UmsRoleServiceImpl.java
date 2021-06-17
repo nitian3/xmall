@@ -1,8 +1,5 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
-import com.yzsunlei.xmall.admin.dao.UmsRolePermissionRelationDao;
-import com.yzsunlei.xmall.db.mapper.UmsRoleMapper;
-import com.yzsunlei.xmall.db.mapper.UmsRolePermissionRelationMapper;
 import com.yzsunlei.xmall.admin.service.UmsRoleService;
 import com.yzsunlei.xmall.db.model.*;
 import org.springframework.beans.factory.annotation.Autowired;

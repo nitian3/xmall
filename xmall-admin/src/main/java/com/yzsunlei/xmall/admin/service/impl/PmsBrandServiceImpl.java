@@ -2,8 +2,6 @@ package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.yzsunlei.xmall.admin.dto.PmsBrandParam;
-import com.yzsunlei.xmall.db.mapper.PmsBrandMapper;
-import com.yzsunlei.xmall.db.mapper.PmsProductMapper;
 import com.yzsunlei.xmall.db.model.PmsBrand;
 import com.yzsunlei.xmall.db.model.PmsBrandExample;
 import com.yzsunlei.xmall.db.model.PmsProduct;

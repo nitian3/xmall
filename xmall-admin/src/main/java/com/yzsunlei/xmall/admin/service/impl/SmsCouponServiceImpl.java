@@ -1,14 +1,8 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.admin.dao.SmsCouponDao;
-import com.yzsunlei.xmall.admin.dao.SmsCouponProductCategoryRelationDao;
-import com.yzsunlei.xmall.admin.dao.SmsCouponProductRelationDao;
 import com.yzsunlei.xmall.admin.dto.SmsCouponParam;
 import com.yzsunlei.xmall.admin.service.SmsCouponService;
-import com.yzsunlei.xmall.db.mapper.SmsCouponMapper;
-import com.yzsunlei.xmall.db.mapper.SmsCouponProductCategoryRelationMapper;
-import com.yzsunlei.xmall.db.mapper.SmsCouponProductRelationMapper;
 import com.yzsunlei.xmall.db.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,6 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.db.mapper.CmsSubjectMapper;
 import com.yzsunlei.xmall.db.model.CmsSubject;
 import com.yzsunlei.xmall.db.model.CmsSubjectExample;
 import com.yzsunlei.xmall.admin.service.CmsSubjectService;

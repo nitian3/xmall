@@ -1,9 +1,7 @@
 package com.yzsunlei.xmall.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.yzsunlei.xmall.admin.dao.SmsFlashPromotionProductRelationDao;
 import com.yzsunlei.xmall.admin.dto.SmsFlashPromotionProduct;
-import com.yzsunlei.xmall.db.mapper.SmsFlashPromotionProductRelationMapper;
 import com.yzsunlei.xmall.db.model.SmsFlashPromotionProductRelation;
 import com.yzsunlei.xmall.db.model.SmsFlashPromotionProductRelationExample;
 import com.yzsunlei.xmall.admin.service.SmsFlashPromotionProductRelationService;
