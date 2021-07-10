@@ -1,44 +1,43 @@
 package com.yzsunlei.xmall.admin.bo;
 
-import com.yzsunlei.xmall.db.model.UmsAdmin;
-import com.yzsunlei.xmall.db.model.UmsPermission;
+import com.yzsunlei.xmall.db.model.User;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * SpringSecurity需要的用户详情
  * Created by macro on 2018/4/26.
  */
 public class AdminUserDetails implements UserDetails {
-    private UmsAdmin umsAdmin;
-    private List<UmsPermission> permissionList;
-    public AdminUserDetails(UmsAdmin umsAdmin,List<UmsPermission> permissionList) {
-        this.umsAdmin = umsAdmin;
-        this.permissionList = permissionList;
+    private User user;
+    //private List<UmsPermission> permissionList;
+
+    public AdminUserDetails(User user/*, List<UmsPermission> permissionList*/) {
+        this.user = user;
+        //this.permissionList = permissionList;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         //返回当前用户的权限
-        return permissionList.stream()
-                .filter(permission -> permission.getValue()!=null)
-                .map(permission ->new SimpleGrantedAuthority(permission.getValue()))
-                .collect(Collectors.toList());
+        /*return permissionList.stream()
+                .filter(permission -> permission.getValue() != null)
+                .map(permission -> new SimpleGrantedAuthority(permission.getValue()))
+                .collect(Collectors.toList());*/
+        return new ArrayList<>();
     }
 
     @Override
     public String getPassword() {
-        return umsAdmin.getPassword();
+        return user.getPassword();
     }
 
     @Override
     public String getUsername() {
-        return umsAdmin.getUsername();
+        return user.getUsername();
     }
 
     @Override
@@ -58,6 +57,6 @@ public class AdminUserDetails implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return umsAdmin.getStatus().equals(1);
+        return user.getStatus().equals(1);
     }
 }

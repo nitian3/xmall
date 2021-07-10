@@ -1,12 +1,11 @@
 package com.yzsunlei.xmall.admin.config;
 
-import com.yzsunlei.xmall.db.model.UmsAdmin;
 import com.yzsunlei.xmall.admin.bo.AdminUserDetails;
 import com.yzsunlei.xmall.admin.component.JwtAuthenticationTokenFilter;
 import com.yzsunlei.xmall.admin.component.RestAuthenticationEntryPoint;
 import com.yzsunlei.xmall.admin.component.RestfulAccessDeniedHandler;
-import com.yzsunlei.xmall.db.model.UmsPermission;
-import com.yzsunlei.xmall.admin.service.UmsAdminService;
+import com.yzsunlei.xmall.admin.service.UserService;
+import com.yzsunlei.xmall.db.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -27,8 +26,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-import java.util.List;
-
 
 /**
  * SpringSecurity的配置
@@ -39,7 +36,7 @@ import java.util.List;
 @EnableGlobalMethodSecurity(prePostEnabled=true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    private UmsAdminService adminService;
+    private UserService userService;
     @Autowired
     private RestfulAccessDeniedHandler restfulAccessDeniedHandler;
     @Autowired
@@ -97,10 +94,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public UserDetailsService userDetailsService() {
         //获取登录用户信息
         return username -> {
-            UmsAdmin admin = adminService.getAdminByUsername(username);
-            if (admin != null) {
-                List<UmsPermission> permissionList = adminService.getPermissionList(admin.getId());
-                return new AdminUserDetails(admin,permissionList);
+            User user = userService.getAdminByUsername(username);
+            if (user != null) {
+//                List<UmsPermission> permissionList = userService.getPermissionList(admin.getId());
+                return new AdminUserDetails(user);
             }
             throw new UsernameNotFoundException("用户名或密码错误");
         };

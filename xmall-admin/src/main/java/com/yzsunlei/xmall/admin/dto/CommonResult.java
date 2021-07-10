@@ -60,8 +60,11 @@ public class CommonResult {
      * 普通失败提示信息
      */
     public CommonResult failed() {
+        return failed("操作失败");
+    }
+    public CommonResult failed(String msg) {
         this.code = FAILED;
-        this.message = "操作失败";
+        this.message = msg;
         return this;
     }
 
