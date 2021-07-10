@@ -12,7 +12,6 @@
     <modules>
         <module>xmall-db</module>
         <module>xmall-admin</module>
-        <module>xmall-app</module>
     </modules>
 
 </project>
